@@ -10,21 +10,9 @@
 </head>
 <style>
     
-       #logout {
-  background-color: #ff0000; /* Set the background color to red */
-  color: #ffffff; /* Set the text color to white */
-  padding: 10px 20px; /* Add padding to the button */
-  border: none; /* Remove the button border */
-  cursor: pointer; /* Change the cursor to a pointer on hover */
-  font-size: 16px; /* Set the font size */
-  border-radius: 5px; /* Add some rounded corners */
-}
+    
 
-#logout:hover {
-  background-color: #cc0000; /* Change the background color on hover */
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -58,7 +46,7 @@ header .nav-container{
 }
 header .nav-container .logo {
     display: flex;
-    min-width: 137px;
+    min-width: 100px;
     justify-content: flex-end;
 }
 header .nav-container .logo img{
@@ -96,20 +84,30 @@ header .search .search-container button {
     background-color: white;
     border-radius: 0 2px 2px 0;
     cursor: pointer;
+
 }
 
 header .login {
     height: 100%;
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin-left: 10px;
+
+}
+header .login p{
+    display: flex;
+    align-items: center;
+    
 }
 header .login button {
     width: 122px;
-    padding: 5px 40px;
+    padding: 3px 30px;
     font-size: 16px;
     font-weight: 600;
     color: var(--primary-color);
+    border: none;
+    margin: 0 30px;
+
 }
 header .become-seller {
     height: 100%;
@@ -145,37 +143,42 @@ header .cart {
 header .cart svg {
     margin-right: 8px;
 }
-
 /* section 1 */
-.section-1 {
-    width: 100%;
-    height: 112px;
+.section-1{
+    width:100%;
+    height:122px;
     background-color: white;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+
 }
+
 .section-1-container{
-    width: 1280px;
-    margin: 0 auto;
-    height: 100%;
+    width:1280px;
+    margin : 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 
 }
+
 .section-1-item{
-    height: 100%;
+    height:100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 4px;
+    gap:4px;
     font-size: 14px;
     font-weight: 500;
 }
-.section-1-item img {
-    width: 64px;
+
+.section-1-item img{
+    width:75px;
     height: 64px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin-right: 10px;
 }
 
 /* section 2 */
@@ -282,18 +285,8 @@ header .cart svg {
     width: 33%;
 }
 
-/* footer */
-footer {
-    margin-top: 26px;
-    background-color: white;
-    padding: 25px;
-    text-align: center;
-    font-size: 14px;
-    color: #878787 ;
-}
 
-#contact{
-font-family:Arial, Helvetica, sans-serif;}
+
 
 </style>
 <body>
@@ -313,9 +306,9 @@ font-family:Arial, Helvetica, sans-serif;}
                 </div>
             </div>
             <div class="login">
-                <p style="color: white; font-weight: bold;" class="mt-2">Welcome, <span id="username"></span></p>&nbsp;
+                <p style="color: white; font-weight: bold;" class="mt-2">Welcome: <span id="username"></span></p>&nbsp;
                 <!-- <button id="logout">Logout</button><br><br> -->
-                <button >Logout</button>
+                <button id="logout">Logout</button>
             </div>
             <div class="become-seller">
                 Become a Seller
@@ -332,46 +325,60 @@ font-family:Arial, Helvetica, sans-serif;}
     </header>
 
     <!-- section 1 -->
-    <section class="section-1">
-        <div class="section-1-container">
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/178cf5a874cd697a.png?q=100" alt="">
-                Top Offers
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e2268d56d09df684.png?q=100" alt="">
-                Mobiles & Tablets
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100" alt="">
-                Electronics
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="">
-                TVs & Appliances
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
-                Fashion
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="">
-                Beauty
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100" alt="">
-                Home & Furniture
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/1cfc2d91f717510a.png?q=100" alt="">
-                Flights
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d154c0b4d536c1cf.png?q=100" alt="">
-                Grocery
-            </div>
+  <!-- Section-1 -->
+  <section class="section-1">
+    <div class="section-1-container">
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/178cf5a874cd697a.png?q=100
+            " alt="">
+            Top Offers
         </div>
-    </section>
+
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e2268d56d09df684.png?q=100
+            " alt="">
+            Mobiles & Tablets
+
+        </div>
+
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100
+            " alt="">
+            Electronics
+        </div>
+
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100
+            " alt="">
+            TVs & Appliances
+        </div>
+
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100
+            " alt="">
+            Fashion
+        </div>
+
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100
+            " alt="">
+            Beauty
+        </div>
+
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100
+            " alt="">
+            Home & Furniture
+        </div>
+
+        <div class="section-1-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/1cfc2d91f717510a.png?q=100
+            " alt="">
+            Flights
+        </div>
+
+    </div>
+ </section>
 
     <!-- section 2 -->
     <section class="section-2 container">
@@ -450,7 +457,7 @@ font-family:Arial, Helvetica, sans-serif;}
 
     <!-- footer -->
    <!-- footer -->
-   <div class="container my-2 " style="color: rgb(13, 11, 11);">
+   <div class="container my-2 mt-5 " style="color: rgb(13, 11, 11);">
     <section id="contact" class="contact">
       <div class="container aos-init aos-animate" data-aos="fade-up">
 
@@ -527,20 +534,24 @@ font-family:Arial, Helvetica, sans-serif;}
 
 
     <script>
-        
-let data = JSON.parse(localStorage.getItem('user'))
-console.log(data)
-document.querySelector('#username').innerHTML = data.username
-// logout button event listener
+    
+    
+document.addEventListener("DOMContentLoaded", function() {
+  let data = JSON.parse(localStorage.getItem('user'));
+  console.log(data);
+  document.querySelector('#username').innerHTML = data.username;
 
-  document.getElementById('logout').addEventListener('click',function() {
-        localStorage.removeItem('user')
-        window.location.href = 'index.html';
-      
-   
-  }); 
+  // Add an event listener to the logout button
+  document.getElementById('logout').addEventListener('click', function() {
+    localStorage.removeItem('user');
+    window.location.href = 'index.html'; // Make sure this path is correct
+  });
+});
 
-    </script>
+</script>
+ 
+
+    
 
 </body>
 
